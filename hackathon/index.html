@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+   <script src="https://www.google.com/jsapi"></script>
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <script src="http://prithwis.x10.bz/charts/jquery.csv-0.71.js"></script> 
+<!--   <script src="https://jquery-csv.googlecode.com/files/jquery.csv-0.71.js"></script>-->
+   <script type="text/javascript">
+   // load the visualization library from Google and set a listener
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChartfromCSV);
+  
+   function drawChartfromCSV(){
+     // grab the CSV
+         $.get("datafile.csv", function(csvString) {
+         // transform the CSV string into a 2-dimensional array
+            var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+         // this new DataTable object holds all the data
+            var data = new google.visualization.arrayToDataTable(arrayData);
+         // this view can select a subset of the data at a time
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0,2]);
+         var options = {
+         title: "apples to oranges",
+          hAxis: {title: data.getColumnLabel(0), minValue: data.getColumnRange(0).min, maxValue: data.getColumnRange(0).max},
+          vAxis: {title: data.getColumnLabel(2), minValue: data.getColumnRange(2).min, maxValue: data.getColumnRange(2).max},
+          legend: 'none'
+          };
+          var chart = new google.visualization.LineChart(document.getElementById('datafile'));
+          chart.draw(view, options);
+         });
+   }
+   </script>
+	
+	
+<title> Here is title</title>
+</head>
+
+<body>
+
+<!--This is used to manipulate all of your content-->
+
+<div class="Page_Wrapper"> 
+  <!--Containers are use to kee track of your width and height or images things can exist outside of the container as well-->
+  <div class="Content_Container"> 
+    <!--Container objects can be indiviualized as well, use this to create rules for all of your different objects you want to make-->
+    <div class="container_object">
+      <div class="outter_layer">
+        <div class="inner_layer"><div id="datafile" style="width: 900px; height: 500px;"> </div></div>
+      </div>
+    </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    <div class="container_object_2">
+		
+      <div class="outter_layer_tile1">
+        <div class="inner_layer"> 1</div>
+      </div>
+		
+      <div class="outter_layer_tile2">
+        <div class="inner_layer"> 2 </div>
+      </div>
+		
+      <div class="outter_layer_tile3">
+        <div class="inner_layer"> 3</div>
+      </div>
+		
+     <div class="outter_layer_tile4">
+        <div class="inner_layer"> 4 </div>
+      </div>
+		
+      <div class="outter_layer_tile5">
+        <div class="inner_layer"> 5 </div>
+      </div>
+		
+      <div class="outter_layer_tile6">
+        <div class="inner_layer"> 6 </div>
+      </div>
+		
+      <div class="outter_layer_tile7">
+        <div class="inner_layer"> 7 </div>
+      </div>
+		
+      <div class="outter_layer_tile8">
+        <div class="inner_layer"> 8 </div>
+      </div>
+		
+      <div class="outter_layer_tile9">
+        <div class="inner_layer"> 9 </div>
+      </div>
+		
+      <div class="outter_layer_tile10">
+        <div class="inner_layer"> 10 </div>
+      </div>
+		
+    
+  </div>
+  <div class="container_object_3">
+    <div class="outter_layer">
+      <div class="inner_layer"> </div>
+    </div>
+  </div>
+</div>
+<!--end of content_container-->
+</div>
+<!--end of page_wrapper-->
+</body>
+</html>

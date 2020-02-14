@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+I like to set my list up with the idea of chain of command.
+html is like setting global varriables 
+on down are things that you can change if you do not want global varibales to change. 
+The more compartments you make the more you can individualize your style.
+
+*/
+html{
+	
+	margin: 0;
+	padding:0;
+	
+}
+/*Your Content here, everything lives here */
+body{
+	max-height:auto ;
+	max-width:auto ;
+	min-height: auto;
+	min-width:auto ;
+	background-color:#D9D9D9;
+}
+h1 {
+  border-style: dashed;
+  border: 5px medium;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+}
+
+.Page_Wrapper{
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #FCD300;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+}
+.Content_Container {
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #00B9FC;
+  background-color: black;
+  color: #3E2EFF;
+  padding: 10px;
+}
+
+.container_object {
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #FC0000;
+  background-color: black;
+  color: greenyellow;
+  padding: 100px;
+margin:5px;
+}
+.container_object_2 {
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #FC0000;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+	margin:5px;
+}
+.container_object_3 {
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #FC0000;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+	margin:5px;
+}
+.outter_layer {
+  border-style: dashed;
+  border: 5px medium;
+  background-color: black;
+	border-color: #B400EF;
+  color: #3E2EFF;
+  padding: 10px;
+}
+.inner_layer {
+  border-style: dashed;
+  border: 5px medium;
+  background-color: black;
+	border-color: #10A200;
+  color: #FF2E42;
+  padding: 10px;
+}
+.outter_layer_one {
+  border-style: dashed;
+  border: 5px medium;
+  background-color: black;
+	border-color: #B400EF;
+  color: #3E2EFF;
+  padding: 10px;
+display: inline-block;
+}
+
+.outter_layer_two {
+  border-style: dashed;
+  border: 5px medium;
+  background-color: black;
+	border-color: #B400EF;
+  color: #3E2EFF;
+  padding: 10px;
+	display: inline-block;
+}
+/*Everything below is tile control*/
+.container_object_2{
+	 display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+	
+	
+	
+
+	@media only screen and (max-width: 500px) {
+		   /*Start row/ Start column/ End row/ End column*/
+  .outter_layer_tile1{ grid-area: 1 / 2 / 1 / 2; }
+  .outter_layer_tile2 { grid-area: 1/ 2 / 1 /3; }
+  .outter_layer_tile3{ grid-area: 4/  / 2 / 4; }
+
+  
+}
+
+
+
+
+/*@media screen and (max-width: 900px) and (min-width: 50px), (min-width: 1100px) {
+.container_object_2{
+  display:grid;
+  grid-auto-rows: 60px;
+
+
+}
+
+
+.outter_layer_tile1{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+margin:5px;
+
+}
+
+.outter_layer_tile2{
+	
+  grid-column-start: 2;
+	grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+	margin:5px;
+
+  
+}
+	.outter_layer_tile3{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+		margin:5px;
+
+  
+}
+
+.outter_layer_tile4{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+	margin:5px;
+
+}
+	
+	.outter_layer_tile5{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+		margin:5px;
+
+}
+
+.outter_layer_tile6{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+	margin:5px;
+
+}
+	
+	.outter_layer_tile7{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+		margin:5px;
+
+}
+
+.outter_layer_tile8{
+  grid-column-start: 4;
+	grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 2;
+	margin:5px;
+
+
+}
+	
+	.outter_layer_tile9{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+		margin:5px;
+
+  
+}
+
+.outter_layer_tile10{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+	margin:5px;
+
+}*/
+	
+
+	
+	
+}
+
+/* Everything bellow is a media querie this will allow screen changes and not get wonky */
+/*--------------------------------------------------------------------------------------*/
+
+/* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+@media screen and (max-width: 900px) and (min-width: 50px), (min-width: 1100px) {
+.Page_Wrapper{
+  border-style: dashed;
+  border: 5px medium;
+  border-color: #FCD300;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+}
+ 
+	
+	
+}
+
+
+
+
